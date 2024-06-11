@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="img/favicon.ico" rel="shortcut icon">
   <title>Home - Software Development | IT Outsourcing Corporation Software Development | IT Outsourcing Corporation</title>
   <link href="https://vietis.com.vn/en/" rel="canonical">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -14,35 +15,64 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header class="Header">
+  <header class="Header Header--pc">
     <div class="Responsive">
-      <div class="Header-logo">
-        <a href="/" data-prop44="header-logo_top">
-          <img class="Header-logo__img" src="img/logo_color.png" alt="" decoding="async">
+      <div class="Header-head">
+        <div class="Header-head-logo">
+          <a href="/" data-prop44="header-pc_home">
+            <img class="Header-head-logo__img" src="img/header_img_logo_pc_on.png" alt="" decoding="async">
+          </a>
+        </div>
+        <a class="Header-head-toggle js-toggle-menu" href="javascript:void(0);">
+          <div class="Header-head-toggle__line"></div>
+          <div class="Header-head-toggle__line"></div>
+          <div class="Header-head-toggle__line"></div>
         </a>
       </div>
       <div class="Header-nav">
         <ul class="Header-nav-list">
           <li class="Header-nav-list-item Header-nav-list-item--highlight">
-            <a class="Header-nav-list-item__lnk" href="/home" data-prop44="header-nav_home">Home</a>
+            <a class="Header-nav-list-item__lnk" href="/home" data-prop44="header-pc_home_01">Home</a>
           </li>
           <li class="Header-nav-list-item">
-            <a class="Header-nav-list-item__lnk" href="/about-us" data-prop44="header-nav_about-us">About Us</a>
+            <a class="Header-nav-list-item__lnk" href="/about-us" data-prop44="header-pc_about-us">About Us</a>
           </li>
           <li class="Header-nav-list-item">
-            <a class="Header-nav-list-item__lnk" href="/service" data-prop44="header-nav_service">Services</a>
+            <a class="Header-nav-list-item__lnk" href="/service" data-prop44="header-pc_service">Services</a>
+            <ul class="Header-nav-list-item-sup">
+              <li class="Header-nav-list-item-sup-type">
+                <a class="Header-nav-list-item-sup-type__lnk" href="/service/#service-dx" data-prop44="header-pc_service-service-dx">Digital Transformation</a>
+              </li>
+              <li class="Header-nav-list-item-sup-type">
+                <a class="Header-nav-list-item-sup-type__lnk" href="/service/#block-chain" data-prop44="header-pc_service-block-chain">Blockchain Technology</a>
+              </li>
+              <li class="Header-nav-list-item-sup-type">
+                <a class="Header-nav-list-item-sup-type__lnk" href="/service/#service-system" data-prop44="header-pc_service-service-system">Development of Mobile and Web Applications</a>
+              </li>
+              <li class="Header-nav-list-item-sup-type">
+                <a class="Header-nav-list-item-sup-type__lnk" href="/service/#service-ui-ux" data-prop44="header-pc_service-ui-ux">Customized Software Development</a>
+              </li>
+            </ul>
           </li>
           <li class="Header-nav-list-item">
-            <a class="Header-nav-list-item__lnk" href="/product" data-prop44="header-nav_product">Products</a>
+            <a class="Header-nav-list-item__lnk" href="/product" data-prop44="header-pc_product">Products</a>
+            <ul class="Header-nav-list-item-sup">
+              <li class="Header-nav-list-item-sup-type">
+                <a class="Header-nav-list-item-sup-type__lnk" href="/product/#product-visInsight" data-prop44="header-pc_product-product-visInsight">Digital Transformation</a>
+              </li>
+              <li class="Header-nav-list-item-sup-type">
+                <a class="Header-nav-list-item-sup-type__lnk" href="/product/#product-veramine" data-prop44="header-pc_product-product-veramine">Blockchain Technology</a>
+              </li>
+            </ul>
           </li>
           <li class="Header-nav-list-item">
-            <a class="Header-nav-list-item__lnk" href="/blogs" data-prop44="header-nav_blogs">Blogs</a>
+            <a class="Header-nav-list-item__lnk" href="/blogs" data-prop44="header-pc_blogs">Blogs</a>
           </li>
           <li class="Header-nav-list-item">
-            <a class="Header-nav-list-item__lnk" href="/works" data-prop44="header-nav_works">Case Study</a>
+            <a class="Header-nav-list-item__lnk" href="/works" data-prop44="header-pc_works">Case Study</a>
           </li>
           <li class="Header-nav-list-item">
-            <a class="Header-nav-list-item__lnk" href="/contact" data-prop44="header-nav_contact">Contact</a>
+            <a class="Header-nav-list-item__lnk" href="/contact" data-prop44="header-pc_contact">Contact</a>
           </li>
           <li class="Header-nav-list-item Header-nav-list-item--jp">
             <a class="Header-nav-list-item__lnk" href="#">JP</a>
@@ -51,11 +81,153 @@
       </div>
     </div>
   </header>
-
+  <header class="Header Header--sp js-header-sp">
+    <div class="Wrapper">
+      <div class="Header-head">
+        <div class="Header-head-logo">
+          <a href="/" data-prop44="header-sp_home">
+            <img class="Header-head-logo__img" src="img/header_img_logo_sp_on.png" alt="" decoding="async">
+          </a>
+        </div>
+        <a class="Header-head-toggle js-toggle-menu" href="javascript:void(0);">
+          <div class="Header-head-toggle__line"></div>
+          <div class="Header-head-toggle__line"></div>
+          <div class="Header-head-toggle__line"></div>
+        </a>
+      </div>
+      <div class="Header-menu">
+        <ul class="Header-menu-list">
+          <li class="Header-menu-list-item Header-menu-list-item--highlight">
+            <a class="Header-menu-list-item__lnk" href="/home" data-prop44="header-sp_home_01">Home</a>
+          </li>
+          <li class="Header-menu-list-item">
+            <a class="Header-menu-list-item__lnk" href="/about-us" data-prop44="header-sp_about-us">About Us</a>
+          </li>
+          <li class="Header-menu-list-item">
+            <span class="Header-sp-arw js-header-sp-arw">
+              <i class="Header-sp-arw__ico fa-solid fa-chevron-down"></i>
+            </span>
+            <a class="Header-menu-list-item__lnk" href="/service" data-prop44="header-sp_service">Services</a>
+            <ul class="Header-menu-list-item-sup">
+              <li class="Header-menu-list-item-sup-type">
+                <a class="Header-menu-list-item-sup-type__lnk" href="/service/#service-dx" data-prop44="header-sp_service-service-dx">Digital Transformation</a>
+              </li>
+              <li class="Header-menu-list-item-sup-type">
+                <a class="Header-menu-list-item-sup-type__lnk" href="/service/#block-chain" data-prop44="header-sp_service-block-chain">Blockchain Technology</a>
+              </li>
+              <li class="Header-menu-list-item-sup-type">
+                <a class="Header-menu-list-item-sup-type__lnk" href="/service/#service-system" data-prop44="header-sp_service-service-system">Development of Mobile and Web Applications</a>
+              </li>
+              <li class="Header-menu-list-item-sup-type">
+                <a class="Header-menu-list-item-sup-type__lnk" href="/service/#service-ui-ux" data-prop44="header-sp_service-ui-ux">Customized Software Development</a>
+              </li>
+            </ul>
+          </li>
+          <li class="Header-menu-list-item">
+            <span class="Header-sp-arw js-header-sp-arw">
+              <i class="Header-sp-arw__ico fa-solid fa-chevron-down"></i>
+            </span>
+            <a class="Header-menu-list-item__lnk" href="/product" data-prop44="header-sp_product">Products</a>
+            <ul class="Header-menu-list-item-sup">
+              <li class="Header-menu-list-item-sup-type">
+                <a class="Header-menu-list-item-sup-type__lnk" href="/product/#product-visInsight" data-prop44="header-sp_product-product-visInsight">Digital Transformation</a>
+              </li>
+              <li class="Header-menu-list-item-sup-type">
+                <a class="Header-menu-list-item-sup-type__lnk" href="/product/#product-veramine" data-prop44="header-sp_product-product-veramine">Blockchain Technology</a>
+              </li>
+            </ul>
+          </li>
+          <li class="Header-menu-list-item">
+            <a class="Header-menu-list-item__lnk" href="/blogs" data-prop44="header-sp_blogs">Blogs</a>
+          </li>
+          <li class="Header-menu-list-item">
+            <a class="Header-menu-list-item__lnk" href="/works" data-prop44="header-sp_works">Case Study</a>
+          </li>
+          <li class="Header-menu-list-item">
+            <a class="Header-menu-list-item__lnk" href="/contact" data-prop44="header-sp_contact">Contact</a>
+          </li>
+          <li class="Header-menu-list-item">
+            <a class="Header-menu-list-item__lnk" href="/jp">JP</a>
+          </li>
+          <li class="Header-menu-list-item Header-menu-list-item--login">
+            <a class="Header-menu-list-item__lnk" href="/login" data-prop44="header-sp_login">Login Center for VietISer</a>
+          </li>
+        </ul>
+      </div>
+      <div class="Header-contact">
+        <div class="Header-contact-email">
+          <img class="Header-contact-email__img" src="img/header_ico_email_sp_on.png" alt="">
+          <div class="Header-contact-email-content">
+            <div class="Header-contact-email-content__ttl">Mail us daily</div>
+            <a class="Header-contact-email-content__txt" href="mailto:contact@vietis.com.vn" data-prop44="header-sp_mail">contact<img src="img/ico_at.png" alt="@" decoding="async">vietis.com.vn</a>
+          </div>
+        </div>
+        <div class="Header-contact-social">
+          <a class="Header-contact-social__lnk" href="https://www.facebook.com/vietis.corporation" data-prop44="header-sp_facebook" target="_blank" rel="external noopener noreferrer nofollow">
+            <img src="img/icon_fb.svg" alt="">
+          </a>
+          <a class="Header-contact-social__lnk" href="https://www.facebook.com/vietis.corporation" data-prop44="header-sp_youtube" target="_blank" rel="external noopener noreferrer nofollow">
+            <img src="img/icon_youtube.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
   <div class="Hero">
     <h1 class="Hero-bg">
-      <img class="Hero-bg__img" src="img/banner_new.png" alt="" decoding="async">
+      <img class="Hero-bg__img" src="img/hero_bg_img_pc_on.png" alt="" decoding="async">
+      <div class="Night">
+        <div class="Night-item">
+          <div class="Night-item__star"></div>
+        </div>
+        <div class="Night-item">
+          <div class="Night-item__star"></div>
+        </div>
+        <div class="Night-item">
+          <div class="Night-item__star"></div>
+        </div>
+        <div class="Night-item">
+          <div class="Night-item__star"></div>
+        </div>
+      </div>
     </h1>
+    <div class="Hero-inner">
+      <div class="Responsive">
+        <div class="Hero-inner-wrap">
+          <h2 class="Hero-inner-wrap__ttl">In Pursuit of Excellence</h2>
+          <p class="Hero-inner-wrap__txt">To be your long term Tech – Partner</p>
+          <div class="Hero-inner-wrap-btn">
+            <div class="Video-btn js-film">
+              <div class="Video-mark">
+                <div class="Wave-pulse Wave-pulse-1"></div>
+                <div class="Wave-pulse Wave-pulse-2"></div>
+              </div>
+              <div class="Video-click">
+                <div class="Video-play">
+                  <span class="Video-play-ico"></span>
+                </div>
+              </div>
+            </div>
+            <div class="Video-item">
+              <span class="Video-item-url">
+                <span class="Video-item-url-ico">
+                  <img class="Video-item-url-ico__img" src="img/hero_icon_inquiry_pc_on.svg" alt="">
+                </span>
+                <a class="Video-item-url-lnk" href="/contact" data-prop44="hero-btn_contact">Inquiry</a>
+              </span>
+            </div>
+          </div>
+          <div class="Hero-inner-wrap-certificate">
+            <div class="Hero-inner-wrap-certificate__img">
+              <img src="img/hero_icon_ios_pc_on.svg" alt="" decoding="async">
+            </div>
+            <div class="Hero-inner-wrap-certificate__img">
+              <img src="img/hero_icon_cmmi_pc_on.png" alt="" decoding="async">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 
