@@ -53,3 +53,51 @@ outsourceAccordion.forEach((accordion) => {
     });
   });
 });
+
+jQuery(document).ready(function ($) {
+  $('.js-slick-feedback').slick({
+    dots: true,
+    arrows: false,
+    speed: 3000,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    slidesToShow: 1,
+    pauseOnHover: false,
+    pauseOnFocus: false
+  });
+
+  $('.js-slick-teams').slick({
+    dots: true,
+    arrows: false,
+    speed: 3000,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    slidesToShow: 5,
+    pauseOnHover: false,
+    pauseOnFocus: false,
+    slidesToScroll: 5,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4
+        }
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      }
+    ]
+  });
+});
