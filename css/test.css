@@ -1,0 +1,224 @@
+.Sidebar-menu {
+  /* display: none; */
+  flex: 1;
+}
+
+.Sidebar {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: -10; /* root: Hero */
+  visibility: hidden;
+  opacity: 0;
+}
+
+.Sidebar--is-open {
+  z-index: 10; /* root: .Header */
+  visibility: visible;
+  opacity: 1;
+}
+
+.Sidebar--is-open .Wrapper {
+  transform: translateX(0);
+}
+
+.Sidebar-head-logo {
+  padding: 0;
+}
+
+.Sidebar-head-toggle__line {
+  background-color: #fff;
+}
+
+.Sidebar-head-toggle__line:first-child {
+  margin: 0;
+  width: 33px;
+  transform: rotate(45deg) translate(4px, 10.5px);
+}
+
+.Sidebar-head-toggle__line:last-child {
+  width: 33px;
+  transform: rotate(-45deg) translate(-3px, -3.5px);
+}
+
+.Wrapper {
+  transform: translateX(-100%);
+  max-width: 325px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  height: 100%;
+  background-color: #2f5aa8;
+  transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.Sidebar-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 0 16px;
+  height: 70px;
+}
+
+.Sidebar-menu-list-item {
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 12px 16px;
+}
+
+.Sidebar-menu-list-item__lnk,
+.Sidebar-menu-list-item-sup-type__lnk {
+  font-weight: 400;
+  color: #fff;
+  display: block;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.Sidebar-menu-list-item--highlight > .Sidebar-menu-list-item__lnk {
+  color: var(--color-main);
+}
+
+.Sidebar-menu-list-item-arw--show .Sidebar-menu-list-item__lnk {
+  font-weight: 700;
+}
+
+.Sidebar-menu-list-item-sup {
+  display: none;
+  margin-top: 16px;
+  height: 0;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.Sidebar-menu-list-item-arw--show .Sidebar-menu-list-item-sup {
+  display: block;
+  height: auto;
+  opacity: 1;
+}
+
+.Sidebar-menu-list-item-sup-type {
+  border-bottom: unset;
+  padding: 10px 0;
+}
+
+.Sidebar-menu-list-item-sup-type__lnk {
+  margin-left: 16px;
+  transition: all 0.2s linear;
+  display: inline-block;
+  position: relative;
+}
+
+.Sidebar-contact {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: #09193233;
+}
+
+.Sidebar-contact-email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.Sidebar-contact-email-content {
+  margin-left: 9px;
+}
+
+.Sidebar-contact-email-content__ttl {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  transition: all 0.2s linear;
+}
+
+.Sidebar-contact-email-content__txt {
+  font-weight: 700;
+  color: #fff;
+  transition: all 0.2s linear;
+}
+
+.Sidebar-contact-social {
+  padding: 9px 16px;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.Sidebar-contact-social__lnk:first-child {
+  margin-bottom: 10px;
+}
+
+.Sidebar-contact-social__lnk {
+  display: block;
+  transition: all 0.2s linear;
+}
+
+.Sidebar-contact-social__lnk:hover {
+  opacity: 0.7;
+}
+
+.Sidebar-menu-list-item-arw {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  display: block;
+  cursor: pointer;
+  padding: 14px 16px;
+  width: 100%;
+  text-align: right;
+}
+
+.Sidebar-menu-list-item-arw {
+  transition: all 0.2s linear;
+}
+
+.Sidebar-menu-list-item-arw--show .Sidebar-menu-list-item-arw__ico {
+  transform: rotate(180deg);
+}
+
+.Sidebar-menu-list-item-arw--show .Header-menu-list-item__lnk {
+  font-weight: 700;
+}
+
+.Sidebar-head-toggle__line {
+  width: 100%;
+  height: 3px;
+  margin-bottom: 5px;
+  transition: all 0.3s;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 1199px) {
+  .Sidebar {
+    display: block;
+  }
+
+  .Sidebar-head {
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .Sidebar-head-toggle {
+    display: block;
+    position: unset;
+    width: 24px;
+    height: 24px;
+  }
+
+  .Sidebar-head-toggle__line:nth-child(2) {
+    opacity: 0;
+  }
+}

@@ -404,6 +404,7 @@
   position: absolute;
   top: calc(50% - 1px);
   right: 0;
+  width: 20px;
   height: 2px;
   background: linear-gradient(
     -45deg,

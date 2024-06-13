@@ -1,5 +1,5 @@
-var headerSP = document.querySelector('.js-header-sp');
-var headerSpArw = document.querySelectorAll('.js-header-sp-arw');
+var headerSP = document.querySelector('.js-sidebar');
+var headerSpArw = document.querySelectorAll('.js-sidebar-arw');
 var headerToggleMenu = document.querySelectorAll('.js-toggle-menu');
 var factsNumber = document.querySelectorAll('.js-counter');
 var outsourceAccordion = document.querySelectorAll('.js-outsource-toggle');
@@ -8,14 +8,14 @@ headerSpArw.forEach(function (item) {
   item.addEventListener('click', function (event) {
     event.preventDefault();
     var parentHeaderSP = item.parentElement;
-    parentHeaderSP.classList.toggle('Header-sp-arw--show');
+    parentHeaderSP.classList.toggle('Sidebar-menu-list-item-arw--show');
   });
 });
 
 headerToggleMenu.forEach(function (item) {
   item.addEventListener('click', function (event) {
     event.preventDefault();
-    headerSP.classList.toggle('Header--is-open');
+    headerSP.classList.toggle('Sidebar--is-open');
   });
 });
 
