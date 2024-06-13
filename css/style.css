@@ -1106,7 +1106,7 @@
   right: 0;
   bottom: 0;
   z-index: 1; /* root: .Outsource */
-  background-image: url(../img/outsource-call_bg.7c4a8c6b.png);
+  background-image: url(../img/outsource_img_call.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1310,7 +1310,7 @@
   content: '';
   left: 0;
   position: absolute;
-  background: url(../img/service-bg.c180873e.png);
+  background: url(../img/service_img_bg.png);
   display: block;
   width: 100%;
   bottom: 0;
@@ -1736,7 +1736,7 @@
 
 .Feedback-wrap-content-item-author::before {
   content: '';
-  background-image: url(../img/feedback_ico.c902c90b.png);
+  background-image: url(../img/feedback_ico.png);
   position: absolute;
   height: 63px;
   width: 90px;
