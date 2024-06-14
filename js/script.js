@@ -1,6 +1,7 @@
 var header = document.querySelector('.js-header');
 var sidebar = document.querySelector('.js-sidebar');
 var backTop = document.querySelector('.js-back-top');
+var loadingScreen = document.querySelector('.js-loader');
 var sidebarArw = document.querySelectorAll('.js-sidebar-arw');
 var headerToggleMenu = document.querySelectorAll('.js-toggle-menu');
 var factsNumber = document.querySelectorAll('.js-counter');
@@ -19,6 +20,12 @@ window.addEventListener('scroll', function () {
 
 backTop.addEventListener('click', function () {
   window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  setTimeout(function () {
+    loadingScreen.style.display = 'none';
+  }, 200);
 });
 
 sidebarArw.forEach(function (item) {
