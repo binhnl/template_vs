@@ -1348,7 +1348,7 @@
   transition: all 1s;
 }
 
-.Services-wrapper-item:hover .Services-wrapper-item-media__lnk {
+.Services-wrapper-item:hover .Services-wrapper-item__lnk {
   opacity: 1;
   height: 100%;
   transition: height 0.2s;
@@ -1457,7 +1457,7 @@
   padding: 0 15px;
 }
 
-.Services-wrapper-item-media__lnk {
+.Services-wrapper-item__lnk {
   opacity: 0;
   width: 100%;
   height: 0;
