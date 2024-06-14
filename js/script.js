@@ -11,10 +11,10 @@ window.addEventListener('scroll', function () {
   let header = document.querySelector('header');
   if (window.pageYOffset > 767) {
     header.classList.add('Header--fixed');
-    backTop.classList.add('Back-top--visible');
+    backTop.classList.add('Backtop--visible');
   } else {
     header.classList.remove('Header--fixed');
-    backTop.classList.remove('Back-top--visible');
+    backTop.classList.remove('Backtop--visible');
   }
 });
 
@@ -22,17 +22,11 @@ backTop.addEventListener('click', function () {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-  setTimeout(function () {
-    loadingScreen.style.display = 'none';
-  }, 200);
-});
-
 sidebarArw.forEach(function (item) {
   item.addEventListener('click', function (event) {
     event.preventDefault();
     var parentSidebar = item.parentElement;
-    parentSidebar.classList.toggle('Sidebar-menu-list-item-arw--show');
+    parentSidebar.classList.toggle('Sidebar-wrap-menu-list-item-arw--show');
   });
 });
 
@@ -59,6 +53,10 @@ function countUp(element, target, duration) {
 }
 
 document.addEventListener('DOMContentLoaded', (event) => {
+  setTimeout(function () {
+    loadingScreen.style.display = 'none';
+  }, 200);
+
   factsNumber.forEach(function (item) {
     let target = parseInt(item.getAttribute('data-target'));
     let duration = 5000;
