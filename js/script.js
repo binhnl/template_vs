@@ -26,7 +26,7 @@ sidebarArw.forEach(function (item) {
   item.addEventListener('click', function (event) {
     event.preventDefault();
     var parentSidebar = item.parentElement;
-    parentSidebar.classList.toggle('Sidebar-wrap-menu-list-item-arw--show');
+    parentSidebar.classList.toggle('Sidebar-wrap-nav-list-item-arw--show');
   });
 });
 
