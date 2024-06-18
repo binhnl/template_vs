@@ -9,7 +9,7 @@ var outsourceAccordion = document.querySelectorAll('.js-outsource-toggle');
 
 window.addEventListener('scroll', function () {
   var header = document.querySelector('header');
-  if (window.pageYOffset > 767) {
+  if (window.scrollY > 767) {
     header.classList.add('Header--fixed');
     backTop.classList.add('Backtop--visible');
   } else {
