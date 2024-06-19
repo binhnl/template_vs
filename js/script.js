@@ -8,8 +8,8 @@ var factsNumber = document.querySelectorAll('.js-counter');
 var outsourceAccordion = document.querySelectorAll('.js-outsource-toggle');
 
 window.addEventListener('scroll', function () {
-  let header = document.querySelector('header');
-  if (window.pageYOffset > 767) {
+  var header = document.querySelector('header');
+  if (window.scrollY > 767) {
     header.classList.add('Header--fixed');
     backTop.classList.add('Backtop--visible');
   } else {
@@ -38,12 +38,12 @@ headerToggleMenu.forEach(function (item) {
 });
 
 function countUp(element, target, duration) {
-  let start = 0;
-  let end = target;
-  let increment = end > start ? 1 : -1;
-  let stepTime = Math.abs(Math.floor(duration / (end - start)));
+  var start = 0;
+  var end = target;
+  var increment = end > start ? 1 : -1;
+  var stepTime = Math.abs(Math.floor(duration / (end - start)));
 
-  let timer = setInterval(function () {
+  var timer = setInterval(function () {
     start += increment;
     element.textContent = start < 10 ? '0' + start : start;
     if (start === end) {
@@ -58,8 +58,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
   }, 200);
 
   factsNumber.forEach(function (item) {
-    let target = parseInt(item.getAttribute('data-target'));
-    let duration = 5000;
+    var target = parseInt(item.getAttribute('data-target'));
+    var duration = 5000;
 
     countUp(item, target, duration);
   });
