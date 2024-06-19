@@ -1683,7 +1683,7 @@
 
 @media screen and (max-width: 1199px) {
   .Study-item:nth-of-type(1),
-  .Study-item:nth-of-type(5){
+  .Study-item:nth-of-type(5) {
     padding: 30px 16px;
   }
 
@@ -1695,19 +1695,59 @@
 @media screen and (max-width: 991px) {
   .Study-item {
     width: 100%;
+    padding: 30px 16px;
   }
 
   .Study-item-content,
-  .Study-item-bg
-   {
-    width: 100%;
-    justify-content: center;
+  .Study-item-bg {
+    max-width: 100%;
     padding: 0;
   }
 
-  .Study-item-content {
+  .Study-item:nth-of-type(2) {
+    order: 1;
+  }
+
+  .Study-item:nth-of-type(1) {
+    order: 2;
+  }
+
+  .Study-item:nth-of-type(3) {
+    order: 3;
+  }
+
+  .Study-item:nth-of-type(4) {
+    order: 4;
+  }
+
+  .Study-item:nth-of-type(6) {
+    order: 5;
+  }
+
+  .Study-item:nth-of-type(5) {
+    order: 6;
+  }
+
+  .Study-item:nth-of-type(1) .Study-item-content,
+  .Study-item:nth-of-type(5) .Study-item-content,
+  .Study-item:nth-of-type(4) .Study-item-content {
+    padding: 0;
+  }
+
+  .Study-item > .Study-item-content {
     max-width: 100%;
-    padding-right: 0;
+    padding: 0;
+  }
+
+  .Study-item:nth-of-type(2),
+  .Study-item:nth-of-type(6),
+  .Study-item:nth-of-type(3) {
+    justify-content: center;
+    padding: 30px 16px;
+  }
+
+  .Study-item-bg {
+    text-align: center;
   }
 }
 
@@ -1895,6 +1935,7 @@
 .Client-brand-item {
   width: 20%;
   padding: 9px 20px;
+
 }
 
 .Client-brand-item-bg {
